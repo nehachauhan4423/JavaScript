@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATTERN</title>
+</head>
+
+<body>
+    <!--   *
+           * *
+	       * * *
+	       * * * *
+	       * * * * * 
+	       * * * *
+	       * * *
+	       * *
+	       * -->
+    <script>
+        let i;
+        let n = parseInt(prompt("ENTER THE ROW SIZE:-"));
+        for(i=1;i<=n;i++){
+            let str ="* ";
+            console.log(str.repeat(i));
+        }
+        for(i=n;i>=1;i--){
+            let str = "* ";
+            console.log(str.repeat(i));
+        }
+    </script>
+</body>
+
+</html>

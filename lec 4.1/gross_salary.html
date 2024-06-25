@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROSS SALARY</title>
+</head>
+<body>
+<!-- Write a javascript Program to find gross salary. (compulsory user input)
+a. Base Salary: 100 RS, HRA= 10%, DA= 5%, TA= 8%.
+b. Ans = 123 RS.(compulsory user input)
+i. HRA => ( House Rent Allowance) = hra = 10* 100 / sal;
+ii. DA => ( Dearness Allowance) = da = 5* 100 / sal;
+iii. TA => ( Travelling Allowance) = ta = 8* 100 / sal;
+1. Formula => gross = sal + da + hra + ta; -->
+
+
+<table width="500px" cellpadding="2" border="2">
+    <tr>
+        <td>Salary : </td>
+        <td id="SALARY"></td>
+    </tr>
+    <tr>
+        <td>Total Salary : </td>
+        <td id="ANSWER"></td>
+    </tr>
+</table>
+
+<script>
+
+    let a = parseFloat(prompt("Enter the Salary:"));
+    sal = a + (a * 0.10) + (a * 0.05) + (a * 0.08);
+
+    document.getElementById("SALARY").innerHTML = a;
+    document.getElementById("ANSWER").innerHTML = sal;
+
+</script>
+
+</body>
+</html>

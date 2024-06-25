@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECURSION</title>
+</head>
+<body>
+    <script>
+        function counter (count){
+            console.log(count);
+            if(count>1){
+                count = count - 1;
+                counter(count);
+            }
+            else{
+                return;
+            }
+        }
+            counter(10)
+       
+    </script>
+</body>
+</html>

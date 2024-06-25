@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIND_MIL(BREAK,LUN,DIN)</title>
+</head>
+<body>
+    <script>
+        let time = parseInt(prompt("ENTER THE TIME"));
+
+        switch(true){
+            case(time>7 && time<=11):
+                document.write("BREAKFAST TIME..!");
+            break;
+            case(time>11 && time<=15):
+                document.write("LUNCH TIME..!");
+            break;
+            case(time>15 && time<=19):
+                document.write("NASTA TIME..!");
+            break;
+            case(time>19 && time<=21):
+                document.write("DINNER TIME..!");
+            break;
+            default:
+                document.write("PLEASE ENTER THE VALID TIME");
+            break;
+        }
+    </script>
+</body>
+</html>

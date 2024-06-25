@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRINGLE AREA</title>
+</head>
+<body>
+    <table width="500px" cellpadding="2" border="1">
+        <tr>
+            <td>AREA OF TRINGLE : </td>
+            <td id="area"></td>
+        </tr>
+    </table>
+
+    <script>
+        let b = parseFloat(prompt("Enter the b:"));
+        let h = parseFloat(prompt("Enter the h:"));
+        triangle=0.5*b*h;
+        document.getElementById("area").innerHTML=triangle;
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIND_NUMBER(LOW,MED,HIGH)</title>
+</head>
+<body>
+    <script>
+        let number = parseInt(prompt("ENTER THE NUMBER"));
+
+        switch(true){
+            case(number>0 && number<=3):
+                document.write("THE NUMBER IS LOW..!");
+            break;
+            case(number>3 && number<=6):
+                document.write("THE NUMBER IS MEDIUM..!");
+            break;
+            case(number>6 && number<=10):
+                document.write("THE NUMBER IS HIGH..!");
+            break;
+            default:
+                document.write("PLEASE ENTER THE VALID NUMBER..!");
+            break;
+        }
+    </script>
+</body>
+</html>

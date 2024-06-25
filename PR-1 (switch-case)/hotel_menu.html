@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU_DRIVEN</title>
+</head>
+
+<body>
+    <script>
+        let choice = parseInt(prompt("ENTER YOUR CHOICE:-"));
+        switch (choice) {
+            case 1: let PIZZA = parseInt(prompt("ENTER YOUR CHOICE:-"));
+                switch (PIZZA) {
+                    case 1:
+                        document.write("CHEEZE PIZZA");
+                        break;
+                    case 2:
+                        document.write("GARLIC PIZZA");
+                        break;
+                    case 3:
+                        document.write("MARGHERITE PIZZA");
+                        break;
+                    case 4:
+                        document.write("PERI PERI VEG PIZZA");
+                        break;
+                    case 5:
+                        document.write("SPRING FILING PIZZA");
+                }
+                break;
+            default:
+                document.write("PLAESE ENTER YOUR VALID CHOICE");
+            case 2: let PASTA = parseInt(prompt("ENTER YOUR CHOICE:-"));
+                switch (PASTA) {
+                    case 1:
+                        document.write("CEESE PASTA");
+                        break;
+                    case 2:
+                        document.write("WHITE SAUCE PASTA");
+                        break;
+                    case 3:
+                        document.write("RED SAUCE PASTA");
+                        break;
+                    case 4:
+                        document.write("PERI PERI MIX PASTA");
+                        break;
+                    case 5:
+                        document.write("TANDOORI PASTA");
+                        break;
+                    default:
+                        document.write("PLEASE ENTRE YOUR VALID CHOICE");
+                }
+            case 3: let DESSERTS = parseInt(prompt("ENTER YOUR CHOICE:-"));
+                switch (DESSERTS) {
+                    case 1:
+                        document.write("CHOCOLATE BROWNIE");
+                    break;
+                    case 2:
+                        document.write("CHEESECAKE");
+                    break;
+                    case 3:
+                        document.write("WAFFLE");
+                    break;
+                    case 4:
+                        document.write("MACAROON");
+                    break;
+                    case 5:
+                        document.write("PASTRY");
+                    break;
+                    default:
+                        document.write("PLEASE ENTER YOUR VALID CHOICE")
+                }
+
+        }
+    </script>
+
+</body>
+
+</html>

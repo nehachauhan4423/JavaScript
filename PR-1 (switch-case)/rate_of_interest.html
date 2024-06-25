@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RATE OF INTEREST</title>
+</head>
+<body>
+    
+
+    <table width="600px" cellpadding="2" border="2">
+        <tr>
+            <td>P :- </td>
+            <td id="p"></td>
+        </tr>
+        <tr>
+            <td>R :- </td>
+            <td id="r"></td>
+        </tr>
+        <tr>
+            <td>N :- </td>
+            <td id="n"></td>
+        </tr>
+        <tr>
+            <td>INTEREST :- </td>
+            <td id="interest"></td>
+        </tr>
+    </table>
+    <script>
+        let a = parseFloat(prompt("ENTER THE P :"));
+        let b = parseFloat(prompt("ENTER THE N :"));
+        let c = parseFloat(prompt("ENTER THE R :"));
+        interest = (a * b * c)/100;
+
+        document.getElementById("p").innerHTML = a;
+        document.getElementById("r").innerHTML = b;
+        document.getElementById("n").innerHTML = c;
+        document.getElementById("interest").innerHTML = interest;
+    </script>
+</body>
+</html>
