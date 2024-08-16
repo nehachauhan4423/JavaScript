@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dry and catch</title>
+</head>
+
+<body>
+    <script>
+        try {
+            let x = parseInt(prompt("ENTER THE VALUE OF X:-"));
+            let y = parseInt(prompt("ENTER THE VALUE OF Y:-"));
+            ans = x / y;
+
+            if(y==0){
+                throw "CAN'T NOT DIVIDE 0"
+            }
+            else{
+                console.log(`ANS:-${ans}`);
+            }
+        }
+        catch(err){
+            console.err(console.err);   
+            }
+
+    </script>
+</body>
+
+</html>

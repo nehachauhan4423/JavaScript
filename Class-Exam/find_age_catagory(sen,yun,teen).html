@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIND AGE CATAGORIES</title>
+</head>
+<body>
+    <script>
+        let age = parseInt(prompt("ENTER THE AGE:-"));
+
+        switch(true){
+            case(age>0 && age<=18):
+                document.write("YOU ARE CHILD..!");
+            break;
+            case(age>18 && age<=26):
+                document.write("YOU ARE TEENAGER..!");
+            break;
+            case(age>26 && age<45):
+                document.write("YOU ARE YOUNGSTER..!");
+            break;
+            default:
+                document.write("YOU ARE SENIOR..!");
+            break;
+            
+        }
+    </script>
+</body>
+</html>

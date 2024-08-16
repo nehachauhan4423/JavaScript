@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INHERITANCE</title>
+</head>
+<body>
+    <script>
+        class parent{
+            constructor(){
+                this.a = 10;
+                this.b = 15;
+            }
+        }
+        class child extends parent{
+            constructor(){
+                super()
+                console.log(`ANS:-${this.a+this.b}`);
+            }
+        }
+        let x = new parent();
+        let y = new child();
+    </script>
+</body>
+</html>

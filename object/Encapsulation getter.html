@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCAPSULATION GETTER</title>
+</head>
+<body>
+    <script>
+        class demo{
+            constructor(name,grid,course,city){
+                this.name= name;
+                this.grid=grid;
+                this.course=course;
+                this.city=city;
+            }
+            getter(){
+                console.log(`NAME:- ${this.name}`);
+                console.log(`GRID:- ${this.grid}`);
+                console.log(`COURSE:- ${this.course}`);
+                console.log(`CITY:- ${this.city}`);
+            }
+        }
+        let  st1 = new demo("NEHA",5471,"FULL-STACK","SURAT");
+        let  st2 = new demo("KHUSHI",4326,"FULL-STACK","AHEMDABAD");
+        st1.getter();
+        st2.getter();
+    </script>
+</body>
+</html>

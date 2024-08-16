@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encapsulation</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        class Demo {
+            constructor(grid, name, std, city) {
+                this.grid = grid;
+                this.name = name;
+                this.std = std;
+                this.city = city;
+            }
+            getter() {
+                console.log(`GRID:-${this.grid}`);
+                console.log(`NAME:-${this.name}`);
+                console.log(`STD:-${this.std}`);
+                console.log(`CITY:-${this.city}`);
+            }
+        }
+        let st1 = new Demo(5471, "NEHA", 11, "SURAT");
+        let st2 = new Demo(5672, "KUNJAL", 12, "RAJKOT");
+        let st3 = new Demo(3421, "BANSI", 11, "AHEMDABAD");
+        let st4 = new Demo(7863, "JANVI", 10, "VAPI");
+
+        st1.getter();
+        st2.getter();
+        st3.getter();
+        st4.getter();
+
+    </script>
+</body>
+
+</html>

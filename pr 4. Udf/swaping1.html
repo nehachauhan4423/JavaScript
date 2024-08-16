@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Variable</title>
+</head>
+<body>
+    <!-- Using with parameeter no return -->
+    <script>
+        function swap(x,y){
+            x = x + y;
+            y = x - y;
+            x = x - y;
+
+            document.write("Swapping numebers :- " + "<br>" + x + "&nbsp;&nbsp;&nbsp;" + y);
+        }
+
+        let a = parseInt(prompt("Enter first number :- "));
+        let b = parseInt(prompt("Enter second number :- "));
+
+        document.write("Your element :- " + "<br>" + a + "&nbsp;&nbsp;&nbsp;" + b + "<br><br><br>");
+
+        let ans = swap(a,b);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find triangle area [3]</title>
+</head>
+<body>
+    <!-- Using no parameter with return -->
+    <script>
+        function triAngle(){
+            let a1 = parseInt(prompt("Enter degree of Angle 1 :- "));
+            let a2 = parseInt(prompt("Enter degree of Angle 2 :- "));
+            let a3 = parseInt(prompt("Enter degree of Angle 3 :- "));
+
+            document.write("Angle 1 is :- " + a1 + "<br>");
+            document.write("Angle 2 is :- " + a2 + "<br>");
+            document.write("Angle 3 is :- " + a3 + "<br><br>");
+
+            let sum = a1+a2+a3;
+
+            if(sum==180){
+                return ("Your triangle is valid..!");
+            }
+            else{
+                return ("Your triangle is not valid..!");
+            }
+        }
+
+
+        let ans = triAngle();
+        document.write(ans);
+    </script>
+</body>
+</html>

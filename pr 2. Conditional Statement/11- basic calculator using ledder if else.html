@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> basic calculator using ledder if else.</title>
+</head>
+<body>
+    <!-- 11. Write a JavaScript program to create basic calculator using ledder if else. -->
+    <script type="text/javascript">
+        let a = parseInt(prompt("ENTER NUBER A:-"));
+        let b = parseInt(prompt("ENTER NUMBRE B:-"));
+        let choice = (prompt("ENTER YOUR CHOICE:-"));
+        if (choice == '+') {
+            console.log(a+b);
+        }
+        else if(choice =='-'){
+            console.log(a-b);
+        }
+        else if(choice == '*'){
+            console.log(a*b);
+        }
+        else if(choice == '/'){
+            console.log(a/b);
+        }
+        else{
+            console.log(`ENTER VALID CHOICE`);
+        }
+    </script> 
+</body>
+</html>

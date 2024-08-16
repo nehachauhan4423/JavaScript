@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASON</title>
+</head>
+
+<body>
+    <div align="center">
+        <form>
+            Name : <input type="text" id="name">
+            <br>
+            <br>
+            <input type="button" onclick="jsondata()" value="submit">
+        </form>
+    </div>
+
+
+    <script type="text/javascript">
+        let data = [];
+        const jsondata = () => {
+            let username = document.getElementById("name").value;
+
+            let obj = {
+                id: Math.floor(Math.random() * 1000),
+                name: username
+            }
+            data.push(obj);
+
+            localStorage.setItem("user", JSON.stringify(data));
+            alert("RECORD ADDED..!");
+        }
+    </script>
+</body>
+
+</html>

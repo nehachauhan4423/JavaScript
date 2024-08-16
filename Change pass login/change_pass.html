@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHNGE_PASS_LOGIC</title>
+</head>
+<body>
+    
+    <h1>nehachauhan4423@gmail.com</h1>
+    <h1>nehachauhan1234</h1>
+
+    <h2 id="email"></h2>
+    <h2 id="password"></h2>
+
+<script>
+    var email = "nehachauhan4423@gmail.com"
+    var password = "nehachauhan1234"
+
+    var usermail = prompt("ENTER YOUR OLD EMAIL ID FOR CHANGE PASSWORD");
+
+    if (usermail == email) {
+        var userpassword = prompt("PLEASE ENTER YOUR PASSWORD..!");
+            email = usermail;
+            password = userpassword;
+    }
+    else{
+        alert("PLAESE ENTER YOUR VALID PASSWORD..!");
+    }
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("password").innerHTML = password;
+
+</script>
+
+</body>
+</html>

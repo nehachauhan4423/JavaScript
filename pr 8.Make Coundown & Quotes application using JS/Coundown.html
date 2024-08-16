@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Coundown & Quotes application using JS</title>
+</head>
+    <style>
+        #button1{
+            background-color: rgb(4, 96, 163);
+        }
+        #button1:hover{
+            background-color: rgb(1, 46, 79);
+            transition: 0.3s;
+        }
+        #button2{
+            background-color: rgb(224, 147, 147);
+        }
+        #button2:hover{
+            background-color: rgb(238, 98, 98);
+            transition: 0.3s;
+        }
+        #button3{
+            background-color: rgb(4, 96, 163);
+        }
+        #button3:hover{
+            background-color: rgb(1, 46, 79);
+            transition: 0.3s;
+        }
+        #button4{
+            background-color: rgb(4, 96, 163);
+        }
+        #button4:hover{
+            background-color: rgb(1, 46, 79);
+            transition: 0.3s;
+        }
+    </style>
+<body
+    style="background: radial-gradient(circle, rgba(238,201,217,1) 51%, rgba(183,211,243,1) 100%);display: flex;justify-content: center;">
+    <div style="justify-content: center;margin-top: 140px;">
+        <h1 align="center" style="font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 900;color:black;">Counter App</h1>
+        <div align="center">
+            <button type="text" onclick="increment()" id="button1"
+                style="height: 50px;width:125px;border-radius:10px;border: 0;color: white;font-size: 30px;font-weight: 700;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;cursor: pointer;">
+                +
+            </button>&nbsp;&nbsp;&nbsp;
+
+            <button type="button" id="button2"
+                style="width: 125px;height: 50px;border-radius: 10px;padding: 0;border: 0;color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                <h2 id="msg" style="margin-top:0;margin-bottom: 0;font-size: 25px;"></h2>
+            </button>&nbsp;&nbsp;&nbsp;
+
+            <button type="text" onclick="decrement()" id="button3"
+                style="height: 50px;width:125px;border-radius:10px;border: 0;color: white;font-size: 30px;font-weight: 700;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;cursor: pointer;">
+                -
+            </button>
+        </div>
+        <div align="center">
+            <button type="text" onclick="reset()" id="button4"
+                style="margin-top: 30px;height: 45px;width:120px;border-radius:10px;border: 0;color: white;font-size: 20px;font-weight: 700;font-family: Georgia, 'Times New Roman', Times, serif;cursor: pointer;">
+                Reset
+            </button>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        let counter = 0;
+        document.getElementById('msg').innerHTML = `${counter}`
+        const increment = () => {
+            counter++;
+            document.getElementById('msg').innerHTML = `${counter}`
+        }
+        const decrement = () => {
+            if (counter > -10000) {
+                counter--;
+            }
+            document.getElementById('msg').innerHTML = `${counter}`
+        }
+        const reset = () => {
+            counter = 0;
+            document.getElementById('msg').innerHTML = `${counter}`
+        }
+    </script>
+</body>
+
+</html>

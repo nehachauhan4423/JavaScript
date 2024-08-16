@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fact (num){
+            if(num > 1){
+                return num * fact (num-1);
+            }
+            else{
+                return 1;
+            }
+        }
+        let a = parseInt(prompt("ENTER VALUE OF A"));
+        let b = fact(a);
+        console.log(`FACT OF ${a} IS ${b}`);
+    </script>
+</body>
+</html>

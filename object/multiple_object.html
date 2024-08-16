@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object with table</title>
+</head>
+
+<body>
+    <table align="center" border="1" style="background-color: bisque;width: 500px;height: 150px;">
+        <thead>
+            <tr>
+                <td>Sr no:</td>
+                <td>Name :</td>
+                <td>PHONE :</td>
+            </tr>
+        </thead>
+        <tbody id="data"></tbody>
+    </table>
+</body>
+<script type="text/javascript">
+    let record = [
+        {
+            name: "neha",
+            phone: 56784
+        },
+        {
+            name: "janvi",
+            phone: 7894
+        },
+        {
+            name: "kunjal",
+            phone: 5243
+        },
+        {
+            name: "khushi",
+            phone: 6146,
+        },
+        {
+            name: "dhruvi",
+            phone: 6532
+        },
+    ]
+
+    let tbl = "";
+    record.map((val, index) => {
+        tbl += `
+            <tr>
+                <td>${++index}</td>
+                <td>${val.name}</td>
+                <td>${val.phone}</td>
+            </tr>
+           `
+    })
+    document.getElementById("data").innerHTML = tbl;
+</script>
+
+</html>

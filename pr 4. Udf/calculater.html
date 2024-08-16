@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+</head>
+<body>
+    <script>
+        function calc(n1,n2){
+            document.write("Press 1 for Addition..!" + "<br>");
+            document.write("Press 2 for Substraction..!" + "<br>");
+            document.write("Press 3 for Multiplication..!" + "<br>");
+            document.write("Press 4 for Division..!" + "<br>");
+            document.write("Press 5 for Modula..!" + "<br><br><br>");
+
+            let choice = parseInt(prompt("Enter Your Choice :- "));
+            document.write("Your choice : " + choice + "<br>");
+
+            switch(choice){
+                case 1:
+                    document.write("Addition of " + n1 + " and " + n2 + " is = " + (n1+n2));
+                    break;
+                case 2:
+                    document.write("Substraction of " + n1 + " and " + n2 + " is = " + (n1-n2));
+                    break;
+                case 3:
+                    document.write("Multiplication of " + n1 + " and " + n2 + " is = " + (n1*n2));
+                    break;
+                case 4:
+                    document.write("Division of " + n1 + " and " + n2 + " is = " + (n1/n2));
+                    break;
+                case 5:
+                    document.write("Modula of " + n1 + " and " + n2 + " is = " + (n1%n2));
+                    break;
+
+                default:
+                    document.write("Enter valid choice between 1 to 5..!");
+                    break;
+            }
+        }
+        let num1 = parseInt(prompt("Enter first number :- "));
+        let num2 = parseInt(prompt("Enter second number :- "));
+
+        document.write("Your first number :- " + num1 + "<br>");
+        document.write("Your second number :- " + num2 + "<br><br>");
+
+        let ans = calc(num1,num2);
+
+    </script>
+</body>
+</html>

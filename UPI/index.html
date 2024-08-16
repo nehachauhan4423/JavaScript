@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div align="center" id="record"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        const viewuser = () => {
+            $.ajax({
+                method: 'GET',
+                url: `https://dummyjson.com/todos`,
+                success: function (data) {
+                    let tododata = data.todos;
+                    let tbl = "";
+                    tododata.map((val, index) => {
+                        const { id, todo } = val
+                        tbl += `
+                            <h2>Id :- ${id}</h2>
+                            <h2>Titale :- ${todo}</h2>
+                        `
+                    })
+                    document.getElementById('record').innerHTML = tbl;
+                }
+            })
+        }
+        viewuser();
+    </script>
+</body>
+
+</html>

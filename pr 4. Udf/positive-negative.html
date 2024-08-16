@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive || Negative || Natural</title>
+</head>
+<body>
+    <!-- Using simple function -->
+    <h3 id="number"></h3>
+
+    <script>
+        function num(){
+            let n = parseInt(prompt("Enter any number :- "));
+
+            if(n==0){
+                
+                document.getElementById("number").innerHTML = "The number is Zero..!";
+            }
+            else if(n>=1){
+                document.getElementById("number").innerHTML = "The number is Positive..!";
+            }
+            else{
+                document.getElementById("number").innerHTML = "The number is Negative..!";
+            }
+        }
+        
+        let ans = num();
+    </script>
+</body>
+</html>

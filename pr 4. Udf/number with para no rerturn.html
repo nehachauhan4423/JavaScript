@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Greater number in 4 numbers</title>
+</head>
+<body>
+
+    <!-- Using with parameter no return -->
+
+    <script>
+        function num(j,k,l,m){
+            if(j>k){
+                if(j>l){
+                    if(j>m){
+                        document.write("1st number is max..!");
+                    }
+                    else{
+                        document.write("4th number is max..!");
+                    }
+                }
+                else{
+                    if(l>m){
+                        document.write("3rd number is max..!");
+                    }
+                    else{
+                        document.write("4th number is max..!");
+                    }
+                }
+            }
+            else{
+                if(k>l){
+                    if(k>m){
+                        document.write("2nd number is max..!");
+                    }
+                    else{
+                        document.write("4th number is max..!");
+                    }
+                }
+                else{
+                    if(l>m){
+                        document.write("3rd number is max..!");
+                    }
+                    else{
+                        document.write("4th number is max..!");
+                    }
+                }
+            }
+        }
+
+        let a = parseInt(prompt("Enter 1st number :- "));
+        let b = parseInt(prompt("Enter 2nd number :- "));
+        let c = parseInt(prompt("Enter 3rd number :- "));
+        let d = parseInt(prompt("Enter 4th number :- "));
+
+        document.write("1st number : " + a);
+        document.write(`<br>`);
+        document.write("2nd number : " + b);
+        document.write(`<br>`);
+        document.write("3rd number : " + c);
+        document.write(`<br>`);
+        document.write("4th number : " + d);
+        document.write(`<br>`);
+        document.write(`<br>`);
+        let ans = num(a,b,c,d);
+    </script>   
+</body>
+</html>

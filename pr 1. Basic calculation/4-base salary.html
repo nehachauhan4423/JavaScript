@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC_SALARY</title>
+</head>
+<body>
+    <!-- 4. Write a javascript Program to find gross salary.(compulsory user input)
+Ex. Base Salary: 100 RS, HRA=10%, DA=5%, TA=8%.
+Ans = 123 RS.(compulsory user input) -->
+    <table width="500px" cellpadding="2" border="2">
+        <tr>
+            <td>SALARY:-</td>
+            <td id="salary:-"></td>
+        </tr>
+        <tr>
+            <td>TOTAL SALARY:-</td>
+            <td id="answer"></td>
+        </tr>
+    </table>
+
+    <script>
+        let a = parseFloat(prompt("ENTER THE SALARY:-"));
+        sal = a + (a * 0.10) + (a * 0.05) + (a * 0.08);
+
+        document.getElementById("salary").innerHTML = a;
+        document.getElementById("answer").innerHTML = sal;
+
+    </script>
+</body>
+</html>

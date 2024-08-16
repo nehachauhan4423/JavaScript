@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATTERN</title>
+</head>
+<body>
+        <!-- * * * * * * * * * 
+              * * * * * * * 
+                * * * * * 
+                  * * * 
+                    *  -->
+    <script>
+        let i,j;
+        let n = parseInt(prompt("enter the row number:-"));
+
+        for(i=n;i>=1;i--){
+            let str =" *  ";
+            let space= "  ";
+            console.log(space.repeat(n-i)+str.repeat(i));   
+        }
+    </script>
+</body>
+</html>

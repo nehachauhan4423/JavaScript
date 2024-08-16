@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product api</title>
+</head>
+
+<body>
+    <div align="center">
+        <h2>VIEW RECORD</h2>
+        <table  border="2">
+            <thead>
+                <tr>
+                    <th>SRNO.</th>
+                    <th>TITLE</th>
+                    <th>TAG</th>
+                    <th>REVIEW</th>
+                    <th>IMAGE</th>
+                </tr>
+            </thead>
+            <tbody id="record"></tbody>
+        </table>
+    </div>
+
+    <script>
+        const viewproduct = () => {
+            fetch(`https://dummyjson.com/products`)
+            .then(res => res.json())
+            .then((data)=>{
+                let tbl = "";
+                let products = map((p,i)=>{
+                    tbl +=`
+                        <tr>
+                            <td>${++i}</td>
+                            <td>${p.title}</td>
+                        </tr>
+                    `
+                })
+                document.getElementById('record').innerHTML = tbl;
+            })    
+        }
+        viewproduct();
+    </script>
+</body>
+
+</html>

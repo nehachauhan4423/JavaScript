@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greater Number in 3 numbers [3]</title>
+</head>
+<body>
+    <!-- Using no parameter with return -->
+    <script>
+        function num(){
+            let x = parseInt(prompt("Enter 1st number :- "));
+            let y = parseInt(prompt("Enter 2nd number :- "));
+            let z = parseInt(prompt("Enter 3rd number :- "));
+
+            document.write("1st :- " + x + "<br><br>");
+            document.write("2nd :- " + y + "<br><br>");
+            document.write("3rd :- " + z + "<br><br>");
+
+            if(x>y){
+                if(x>z){
+                    return ("1st number is max..!");
+                }
+                else{
+                    return ("3rd number is max..!");
+                }
+            }
+            else{
+                if(y>z){
+                    return ("2nd number is max..!");
+                }
+                else{
+                    return ("3rd number is max..!");
+                }
+            }
+        }
+        let ans = num();
+        document.write(ans);
+    </script> 
+</body>
+</html>

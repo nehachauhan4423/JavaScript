@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query selector </title>
+</head>
+
+<body align="center">
+    <p class="demo">janavi</p>
+    <p class="demo">hetvi</p>
+    <p class="demo">khushi</p>
+    <button onclick="clickevent()">click</button>
+    <script type="text/javascript">
+        const clickevent = () => {
+            let p = document.querySelectorAll('p');
+            for (let i = 0; i < p.length; i++) {
+                if (i % 2 == 0) {
+                    p[i].style.color = "red"
+                }
+                else {
+                    p[i].innerHTML = "neha"
+                    p[i].style.color = "blue";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <section>
+        <div align="center">
+            <h1 style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;font-size: 40x;">Form validation</h1>
+            <form >
+                    name:-  <input type="text" id="name">
+                 phone:- <input type="text" id="name">
+
+                 <input type="submit"  onclick="saverecord()" value="submit">
+                 
+            </form>
+
+            <h2 style="font-family: Arial, Helvetica, sans-serif;">data collection </h2>
+
+            <table border="1">
+                <thead>
+                        <td>SRNO</td> 
+                        <td>GRID</td>
+                        <td>NAME</td>
+                        <td>PHONE</td>  
+                </thead>
+            </table>
+        </div>
+    </section>
+
+    <script>
+
+        let data =[];
+        const saverecord = () => {
+            let name = document.getElementById('name').value;
+            let phone = document.getElementById('phone').value;
+
+            if(!name || phone)
+        {
+            alert("ALL FEILD IS REQUIRED");
+        }
+        }
+
+    </script>
+
+</body>
+</html>

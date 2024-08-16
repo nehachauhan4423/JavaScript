@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try and catch</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        try {
+            let a = 10; b = 0;
+            let ans = a / b;
+            if (b == 0) {
+                throw "can not divide 0";
+            }
+            else {
+                console.log(`ans = ${ans}`);
+            }
+
+        }
+        catch (err) {
+            console.error(err);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather num is prime or not using while loop</title>
+</head>
+
+<body>
+    <script>
+        let prime = 0;
+        let notprime = 0;
+        let number = parseInt(prompt("ENTER THE NUMBER:-:-"));
+        while (i < number) {
+            if (number % i == 0) {
+                prime = 1;
+                break;
+            }
+            if (prime == notprime) {
+                console.log('THIS NUMBER IS NOT PRIME..!');
+            }
+            else {
+                console.log('THIS NUMBER IS PRIME..!');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h3 id="name" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;font-weight: 400;"></h3>
+<h3 id="gmail" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;font-weight: 400;"></h3>
+<h3 id="course" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;font-weight: 400;"></h3>
+<h3 id="collage" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;font-weight: 400;"></h3>
+<h3 id="world" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;font-weight: 400;"></h3>
+<h3 id="country" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  font-size: 20px;font-weight: 400;"></h3>
+<h3 id="state" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  font-size: 20px;font-weight: 400;"></h3>
+<h3 id="city" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 20px;font-weight: 400;" ></h3>
+
+<body>
+    <script type="text/javascript">
+        let object = {
+            name: "NEHA",
+            gmail: "nehachauhan4423@gmail.com",
+            course: "full-stack",
+            collage: "S.S.I.U",
+            world: {
+                country: "India",
+                state: "Gujarat",
+                city: ["Surat", "Ahemdabad", "Vadodara",]
+            }
+        }
+        document.getElementById("name").innerHTML = `Name :- ${object.name}`;
+        document.getElementById("gmail").innerHTML = `Gmail :- ${object.gmail}`;
+        document.getElementById("course").innerHTML = `Course :- ${object.course}`;
+        document.getElementById("collage").innerHTML = `Collage :- ${object.collage}`;
+        document.getElementById("world").innerHTML = `Country :- ${object.world.country}`;
+        document.getElementById("state").innerHTML = `State:- ${object.world.state}`;
+        document.getElementById("country").innerHTML = `City:-${object.world.city[1]}`; 
+       
+    </script>
+</body>
+
+</html>

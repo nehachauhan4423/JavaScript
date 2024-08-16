@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> print out Fibonacci series.</title>
+</head>
+<body>
+    <script type="text/javascript">
+       
+        let n = parseInt(prompt('ENTER FIBPNACCI SERIES: '));
+        let number1 = 0, number2 = 1, a;
+
+        for (let i = 1; i <= n; i++) {
+            document.write(number1);
+            a = number1 + number2;
+            number1 = number2;
+            number2 = a;
+        }
+
+    </script>
+</body>
+</html>

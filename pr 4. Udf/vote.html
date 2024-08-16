@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligible for vote</title>
+</head>
+<body>
+
+    <!-- Using with parameter no return -->
+    <script>
+
+        function checkAge(age){
+            if(age >= 18){
+                document.write("You're eligible for vote");
+            }
+            else{
+                document.write("You're not eligible for vote");
+            }
+        }
+
+        let age = parseInt(prompt("Enter your age :"));
+        let ans = checkAge(age);
+    </script>
+</body>
+</html>

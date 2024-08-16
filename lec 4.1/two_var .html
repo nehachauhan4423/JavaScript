@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Variables Add..</title>
+    <!-- Write a javascript Program for two variables addition, subtraction, multiplication, and
+division. (compulsory user input) -->
+</head>
+<body>
+    <table width="500px" border="2" cellpadding="15">
+        <tr>
+            <td>A+B</td>
+            <td id="a"></td>
+        </tr>
+        <tr>
+            <td>A-B</td>
+            <td id="b"></td>
+        </tr>
+        <tr>
+            <td>A*B</td>
+            <td id="c"></td>
+        </tr>
+        </tr>
+            <td>A/B</td>
+            <td id="d"></td>
+        </tr>
+    </table>
+
+    <script>
+
+        let a=parseInt(prompt("ENTER NUMBER OF A:-"));
+        let b=parseInt(prompt("ENTER NUMBER OF B:-"));
+
+        document.getElementById("a").innerHTML=a+b;
+        document.getElementById("b").innerHTML=a-b;
+        document.getElementById("c").innerHTML=a*b;
+        document.getElementById("d").innerHTML=a/b;
+    </script>
+
+</body>
+</html>

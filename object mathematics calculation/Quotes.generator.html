@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/img/Header-Side-Panel-Img.jpg">
+    <title>quotes.generator</title>
+</head>
+
+<!-- <body style="background-image:url('assets/img/closeup-marble-textured-background.jpg');background-repeat: no-repeat;width: 1160px;"> -->
+    <body style="background-color: blanchedalmond;">
+    <button id="generator"
+        style="width: 150px;height: 70px;font-size: larger;font-family: sans-serif;background-color: rgb(250, 197, 111);color:rgb(0, 0, 0); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: 500;font-size: 18px;">CLICK
+        ME</button>
+
+    <h2 id="quoter"
+        style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-bottom: 0;font-weight: 100;">
+    </h2>
+
+    <p id="author"
+        style="font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;margin-top: 8px;font-weight: 500;font-size: larger;">
+    </p>
+
+
+    <script>
+        const quotes = function () {
+            const quotes = [
+                {
+                    quote: 'To live is the rarest thing in the world. Most people exist, that is all.',
+                    author: "Oscar Wilde"
+                },
+                {
+                    quote: 'That it will never come again is what makes life so sweet.',
+                    author: "Emily Dickinson"
+                },
+                {
+                    quote: 'To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.',
+                    author: "Ralph Waldo Emerson"
+                },
+                {
+                    quote: 'All the world a stage and all the men and women merely players.',
+                    author: "William Shakespeare"
+                },
+                {
+                    quote: 'Appreciation is a wonderful thing. It makes what is excellent in others belong to us as well.',
+                    author: "Voltaire"
+                },
+                {
+                    quote: 'Amateurs sit and wait for inspiration, the rest of us just get up and go to work.',
+                    author: "Stephen King"
+                },
+                {
+                    quote: 'The Six Golden Rules of Writing: Read, read, read, and write, write, write.',
+                    author: "Ernest Gaines"
+                },
+                {
+                    quote: 'The purpose of a writer is to keep civilization from destroying itself.',
+                    author: "Albert Camus"
+                },
+                {
+                    quote: 'A good writer possesses not only his own spirit but also the spirit of his friends.',
+                    author: "Friedrich Nietzsche"
+                },
+                {
+                    quote: 'Do not hoard what seems good for a later place in the book, or for another book; give it, give it all, give it now.',
+                    author: " Annie Dillard"
+                },
+
+            ];
+            let arrayIndex = Math.floor(Math.random() * quotes.length);
+
+            document.getElementById("quoter").innerHTML = quotes[arrayIndex].quote;
+            document.getElementById("author").innerHTML = quotes[arrayIndex].author;
+        }
+
+        window.onload = function () {
+            quotes();
+            document.getElementById("generator").addEventListener("click", quotes);
+        }
+
+    </script>
+</body>
+
+</html>

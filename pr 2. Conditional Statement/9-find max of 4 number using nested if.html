@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find max 4 number using nested if</title>
+</head>
+<body>
+    <script>
+
+
+        let a = parseInt(prompt("ENTER THE NUMBER OF A :- "));
+        let b = parseInt(prompt("ENTER THE NUMBER OF B :- "));
+        let c = parseInt(prompt("ENTER THE NUMBER OF C :- "));
+        let d = parseInt(prompt("ENTER THE NUMBER OF D :- "));
+    
+    
+    
+            if (a > b) {
+                if (a > c) {
+                    if (a > d) {
+                        console.log("A IS MAX");
+                    }
+                    else {
+                        console.log("D IS MAX");
+                    }
+                }
+                else {
+                    if (c > d) {
+                        console.log("C IS MAX");
+                    }
+                    else {
+                        console.log("D IS MAX");
+                    }
+                }
+            }
+            else {
+                if (b > c) {
+                    if (b > d) {
+                        console.log("B IS MAX");
+                    }
+                    else {
+                        console.log("D IS MAX");
+                    }
+                }
+                else {
+                    if (c > d) {
+                        console.log("C IS MAX");
+                    }
+                    else {
+                        console.log("D IS MAX");
+                    }
+                }
+            }
+    
+    
+    
+    </script> 
+</body>
+</html>

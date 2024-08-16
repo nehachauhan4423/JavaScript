@@ -1,0 +1,17 @@
+<script>
+    let prime = 0 ;
+    let not_prime = 0;
+    let number = parseInt(prompt("Enter no:-"));
+    for(i=2;i<number;i++){
+        if (number%i==0){
+            prime=1;
+        break;
+        }   
+    }
+    if(prime==1){
+        console.log('YOUR NUMBER IS PRIME..!');
+    }
+    else{
+        console.log('YOUR NUMBER IS NOT PRIME..!');
+    }
+</script>
