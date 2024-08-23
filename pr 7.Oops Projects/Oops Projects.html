@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oops Projects</title>
+    <title>Oops Projects/students</title>
 </head>
-<body>
+<body align="center" style="border: 1ps solid black;">
     <script>
-        sc
+        class student {
+            constructor(name,std,age,country){
+                this.name = name ;
+                this.std = std;
+                this.age = age;
+                this.country = country;
+            }
+            details(){
+                document.write(`NAME :${this.name}<br>`);
+                document.write(`STD :${this.std}<br>`);
+                document.write(`AGE :${this.age}<br>`);
+                document.write(`COUNTRY :${this.country}<br><br>`);
+            }
+        }
+        const student1 = new student("NEHA","DIPLOMA",17, "USA");
+        const studen2 = new student("JANAVI","BSC IT", 20, "IND");
+
+
+        document.write("STUDENT 1: <br><br>");
+        student1.details();
+
+        document.write("");
+        studen2.details();
+
     </script>
 </body>
 </html>
