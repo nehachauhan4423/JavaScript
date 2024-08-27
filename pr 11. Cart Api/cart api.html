@@ -22,7 +22,6 @@
     </div>
 
     <script type="text/javascript">
-
         const getAllCart = () => {
             fetch(`https://dummyjson.com/carts`)
                 .then(res => res.json())
@@ -44,12 +43,12 @@
                                                 </tr>
                                             </thead>
                                             <tbody>`
-                                                val.products.map((p,i)=>{
+                                                val.products.map((c,i)=>{
                                                     return(
                                                         tbl +=`
                                                             <tr>   
-                                                                <td>${p.id}</td>
-                                                                <td>${p.title}</td>
+                                                                <td>${c.id}</td>
+                                                                <td>${c.title}</td>
                                                             </tr>   
                                                         `
                                                     )
