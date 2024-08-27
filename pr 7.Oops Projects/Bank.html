@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK ACCOUNT</title>
+</head>
+<body>
+    <script type="text/javascript">
+        class bankaccount {
+            constructor(accno, bal) {
+                this.accno = accno;
+                this.bal = bal;
+            }
+    
+            withdrow(val) {
+                let accountno = parseInt(prompt("ENTER YOUR ACCOUNT NUMBER :"));
+                if (this.accno == accountno) {
+                    if (val == 0) {
+                        console.log(" 0 IS NOT ADD");
+                    }
+                    else {
+                        if (this.bal <= val) {
+                            console.log("INSUFICIENT BALANCE");
+                        }
+                        else { 
+                            this.bal -= val;
+                            console.log(`YOUR BALANCE IS: ${this.bal}`);
+                        }
+                    }
+                }
+                else{
+                    alert("INVALID ACCOUNT NUMBER");
+                    return false;
+                }
+    
+            }
+            deposite(val) {
+                this.bal += val;
+                console.log(`Your balance is : ${this.bal}`);
+            }
+        }
+        let bank = new bankaccount(121212121, 1000);
+        bank.deposite(300);
+        bank.deposite(1200);
+        bank.withdrow(350);
+    </script>
+</body>
+</html>
