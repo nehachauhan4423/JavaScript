@@ -7,12 +7,12 @@
 </head>
 <body>
     <script type="text/javascript">
-        class bankaccount {
+        class BankAccount {
             constructor(accno, bal) {
                 this.accno = accno;
                 this.bal = bal;
             }
-    
+
             withdrow(val) {
                 let accountno = parseInt(prompt("ENTER YOUR ACCOUNT NUMBER :"));
                 if (this.accno == accountno) {
@@ -40,7 +40,7 @@
                 console.log(`Your balance is : ${this.bal}`);
             }
         }
-        let bank = new bankaccount(121212121, 1000);
+        let bank = new BankAccount(121212121, 1000);
         bank.deposite(300);
         bank.deposite(1200);
         bank.withdrow(350);
